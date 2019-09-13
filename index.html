@@ -1,0 +1,48 @@
+<form method="post" action="miservidor.php">
+    <div>
+      <label for=”CP”>Codigo Postal:</label>
+      <input id=”CP” type=”text” size="8">
+    </div>
+    <br>
+    <div>
+      <label for=”sat”>Nivel de Satisfacción:</label>
+      <input type="range" name="sat" min="1" max="5">
+    </div>
+    <br>
+    <div>
+      <label for=”email”>Correo Electrónico:</label>
+      <input type="email" name="email" size="40">
+    </div>
+    <br>
+    <div>
+        <label for=”positivos”>Puntos Positivos:</label>
+        <textarea id=”positivos” rows="4" cols="50"></textarea>
+    </div>
+    <br>
+    <div>
+        <label for=”negativos”>Puntos Negativos:</label>
+        <textarea id=”negativos” rows="4" cols="50"></textarea>
+        
+    </div>
+  <br>
+   <div>
+      <label for=”calidad”>Calidad del Producto:</label>
+      <select id=”calidad”>
+        <option value=”e”>excelente</option>
+        <option value=”b”>bueno</option>
+        <option value=”r”>regular</option>
+        <option value=”m”>malo</option>
+      </select>
+      
+  </div>
+  <br>
+  <div style="width: 50">
+      <fieldset>
+        <legend>Precio</legend>
+        <input type="radio" name="precio" value="Alto" checked> Alto<br>
+        <input type="radio" name="precio" value="Bajo"> Bajo<br>
+      </fieldset>
+  </div>
+  <br><br>
+  <button type="submit">Enviar formulario</button>
+</form>
